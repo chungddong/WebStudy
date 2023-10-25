@@ -1,0 +1,447 @@
+<html>
+    <head>
+        <title>my page</title>
+        <style>
+
+            body {
+                background-color: #2577BE;
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                overflow: hidden;
+            }
+
+            .header {
+                background-color: transparent;
+                height: 15%;
+            }
+
+            .container {
+                background-color: transparent;
+                width: 100%;
+                height: 70%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .box {
+                background-color: #E5E7EE;
+                border: 5px solid #1C4C76;
+                border-radius: 15px;
+            }
+            
+            .innerbox {
+                border: 4px solid #1C4C76;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            #left_box{
+                margin-right: 0.7%;
+                width: 18%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #left_box #img_profile{
+                height: 38%;
+                width: 80%;
+            }
+
+            #img_profile img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+
+            #left_box #infobox{
+                height: 48%;
+                width: 80%;
+                margin-top: 4%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #infobox #info_title {
+                background-color: #1364AA;
+                width: 80%;
+                height: 10%;
+                border-radius: 10px;
+                color: white;
+                font-size: 110%;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+
+            #infobox a {
+                font-size: 140%;
+                font-weight: bold;
+                color: #51738F;
+            }
+
+            #right_box{
+                margin-left: 0.7%;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            #right_box .topBoxcon {
+                width: 96%;
+                height: 60%; 
+            }
+
+            .topBoxcon #menu {
+                width: 100%;
+                height: 9%;
+                margin-left: 2%;
+                display: flex;
+            }
+
+            #menu .tab {
+                
+                width: 20%;
+                height: 100%;
+                background-color: #B3B3B3;
+                border-top-left-radius: 40px 90px;
+                border-top-right-radius: 40px 90px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 110%;
+                color: #1C4C76;
+                border: 3px solid #1C4C76;
+                border-bottom: 0px;
+                
+            }
+
+            #menu .tab a {
+                text-decoration: none;
+                color: #1C4C76;
+            }
+
+            #menu .tab a:hover {
+                color: white;
+            }
+
+            #menu .tab:hover {
+                background-color: #1C4C76;
+            }
+
+            .topBoxcon #boxes {
+                width: 100%;
+                height: 95%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #boxes #leftInfobox {
+                width: 68%;
+                height: 98%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #leftInfobox iframe{
+                width: 97%;
+                height: 96%;
+                border-radius: 10px;
+                border: 0px;
+            }
+
+            #boxes #rightInfobox {
+                margin-left: 3%;
+                width: 28%;
+                height: 98%;
+            }
+
+            #rightInfobox #content_title{
+                width: 100%;
+                height: 10%;
+                color: #1C4C76;
+                font-size: 130%;
+                font-weight: bold;
+                margin-top: 3%;
+                text-align: center;
+            }
+
+
+
+            #right_box .bottomBoxcon {
+                margin-top: 3%;
+                width: 96%;
+                height: 30%; 
+                display: flex;
+                align-items: center;
+            }
+
+            .bottomBoxcon #sitemapbox {
+                width: 100%;
+                height: 85%;
+            }
+
+            #sitemapbox #sitemap_title {
+                background-color: transparent;
+                color: #1C4C76;
+                font-size: 140%;
+                font-weight: bold;
+                margin-left: 2%;
+                margin-top: 1%;
+            }
+
+            #sitemapbox #sitemap_contentbox {
+                height: 70%;
+                margin-left: 2%;
+                display: flex;
+                align-items: center;
+            }
+
+            #sitemap_contentbox .item {
+                width: 11%;
+                text-align: center;
+                margin-right: 3%;
+            }
+
+            .item #item_img {
+                height: 72%;
+                display: flex;
+                align-items: center;
+            }
+
+            #item_img a{
+                width: 95%;
+                height: 100%;
+            }
+
+            #item_img #imgbox {
+                border-radius: 15px;
+                border-width: 3px;
+                width: 100%;
+                height: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #item_img #imgbox:hover {
+                background-color: #7DACE7;
+            }
+
+            #imgbox img {
+                width: 80%;
+                height: 83%;
+            }
+
+            .item #item_text {
+                height: 20%;
+                color: #4D4D4D;
+                font-weight: bolder;
+                font-size: 120%;
+            }
+
+
+            .footer {
+                background-color: transparent;
+                height: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+
+            .footer #waterMark {
+                background-color: white;
+                width: 33%;
+                height: 13%;
+                padding: 8px;
+                border: 3px solid #1C4C76;
+                border-bottom: 0px;
+                border-top-left-radius: 30px 60px;
+                border-top-right-radius: 30px 60px;
+
+                text-align: center;
+                font-size: 20px;
+                line-height: 20px;
+                font-weight: bold;
+                color: #3D3D3D;
+            }
+
+            .footer #cl{
+                width: 230px;
+                height: 100px;
+                background-color: transparent;
+                position: fixed;
+                left: 85%;
+            }
+            
+        </style>
+    </head>
+
+
+    <body>
+
+        <div class="header"></div>
+
+        <div class="container">
+
+            <div class="box" id="left_box">
+                <div class="innerbox" id="img_profile">
+                    <img src="./img_profile.jpg">
+                </div>
+
+                <div class="innerbox" id="infobox">
+                    
+                    <div id="info_title">
+                        이름
+                    </div>
+                    <a>서충만</a>
+                    <div id="info_title">
+                        학과
+                    </div>
+                    <a>컴퓨터공학과</a>
+                    <div id="info_title">
+                        메일
+                    </div>
+                    <a>chungman</a>
+                    <a>010918@gmail.com</a>
+
+                </div>
+            </div>
+            <div class="box" id="right_box">
+
+                <div class="topBoxcon">
+                    
+                    <div id="menu">
+                        <div class="tab" style="background-color: #1C4C76;">
+                            <a href="./introduce.html" target="f1" style="color: white;"> 
+                                소개 페이지</a>
+                        </div>
+
+                        <div class="tab">
+                            <a href="./cssStudy.html" target="f1">실습 모음</a>
+                        </div>
+                    </div>
+
+                    <div id="boxes">
+                        <div class="innerbox" id="leftInfobox">
+                            <iframe name="f1" src="./introduce.html">
+                                
+                            </iframe>
+                        </div>
+    
+                        <div class="innerbox" id="rightInfobox">
+                            <div id="content_title">
+                                INTEREST
+                            </div>
+
+                            <img src="./img_interest.png" width="100%">
+
+                            <div id="content_title">
+                                TOOLS&LANG
+                            </div>
+
+                            <img src="./img_tools.png" width="100%" style="margin-top: 5%;">
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="bottomBoxcon">
+                    
+                    <div class="innerbox" id="sitemapbox">
+                        
+                        <div id="sitemap_title">
+                            SITEMAP
+                        </div>
+
+                        <div id="sitemap_contentbox">
+                            
+                            <div class="item">
+                                <div id="item_img">
+                                    <a href="./time table.html" target="f1">
+                                        <div class="innerbox" id="imgbox">
+                                            <img src="./img_timetable.png">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="item_text">
+                                    시간표
+                                </div>
+                            </div> 
+
+                            <div class="item">
+                                <div id="item_img">
+                                    <a href="https://jj.ac.kr/cse" target="f1">
+                                        <div class="innerbox" id="imgbox">
+                                            <img src="./img_cybercam.png">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="item_text" style="font-size: 105%; font-weight: bold;">
+                                    학과사이트
+                                </div>
+                            </div> 
+
+                            <div class="item">
+                                <div id="item_img">
+                                    <a href="https://jj.ac.kr/" target="f1">
+                                        <div class="innerbox" id="imgbox">
+                                            <img src="./img_jjlogo.png">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="item_text">
+                                    전주대
+                                </div>
+                            </div> 
+
+                            <div class="item">
+                                <div id="item_img">
+                                    <a href="https://github.com/chungddong">
+                                        <div class="innerbox" id="imgbox">
+                                            <img src="./img_github.png">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="item_text">
+                                    깃허브
+                                </div>
+                            </div> 
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <div id="waterMark">
+                202068010 서충만
+            </div>
+
+            <div id="cl">
+
+            </div>
+
+        </div>
+    
+
+    </body>
+ </html>

@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>수평메뉴 페이지 구성</title>
+        <style>
+            body {
+                padding: 0%;
+                overflow: hidden;
+            }
+
+            h2 {
+                color: #1C4C76;
+            }
+
+            p {
+                font-size: 110%;
+                font-weight: bold;
+                color: #3C3C3C;
+            }
+
+            .infobox {
+                width: 100%;
+                height: 26%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+            }
+
+            .infobox #tbBox {
+                width: 55%;
+                height: 98%;
+                border: 2px solid #1C4C76;
+                background-color: white;
+                border-radius: 0px 10px 10px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .infobox #tbBox a {
+                margin-left: 4%;
+                margin-right: 2%;
+                font-weight: bold;
+                color: #3C3C3C;
+            }
+
+            .infobox #mbtiBox {
+                width: 30%;
+                height: 33%;
+                border : 2px solid #1C4C76;
+                background-color: white;
+                border-radius: 8px;
+                margin-left: 15%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #1C4C76;
+                font-weight: bold;
+            }
+
+            .footerbox {
+                background-color: transparent;
+                width: 100%;
+                height: 18%;
+                display: flex;
+                justify-content: end;
+                align-items: flex-end;
+            }
+
+            .footerbox #text_s {
+                font-size: 110%;
+                font-weight: bold;
+                color: #2F2F2F;
+            }
+
+            .footerbox #text_l {
+                font-size: 280%;
+                margin-right: 5%;
+                margin-left: 5%;
+                color: #F6D200; 
+                font-weight: bold;
+                text-shadow: 4px 4px 6px #1C4C76;
+            }
+            
+        </style>
+    </head>
+
+
+    <body>
+
+        <h2>INTRODUCE</h2>
+        <p>
+            안녕하세요. 저는 현재 전주대학교에 재학중인 서충만이라고 합니다.
+            현재 2학년이며 남들에게 도움이 되는 소프트웨어를 만들고자 하는
+            꿈을 가지고 열심히 공부중입니다.
+        </p>
+        <h2>INFORMATION</h2>
+        
+        <div class="infobox">
+            <div id="tbBox">
+                <a>좋아하는 글귀<br>눈물을 흘리며 씨를 뿌리는 자는 기쁨으로 거두리로다 시편 126편 5절</a>
+            </div>
+            <div id="mbtiBox">
+                MY MBTI
+            </div>
+        </div>
+
+        <div class="footerbox">
+           <a id="text_s">논리적인 사색가,논리술사</a>
+           <a id="text_l">INTP</a>
+        </div>
+
+    </body>
+ </html>
